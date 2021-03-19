@@ -1,0 +1,93 @@
+@import "Libs/mixins.scss";
+
+
+html {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+body {
+    background: grey;
+    color: #FFF;
+    padding: 0;
+    margin: 0;
+}
+
+%centrage {
+    display: flex;
+    justify-content: center;
+}
+
+%text {
+    text-align: center;
+}
+
+%navColor {
+    color: #939090;
+}
+
+.nav {
+    background: #222222;
+    @extend %navColor;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-btn p {
+    margin-right: 70px;
+    @extend %navColor;
+}
+
+.logo {
+    padding-top: 15px;
+}
+
+header {
+    background: url(img/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+    @extend %text;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+.header_p {
+    font-size: 2rem;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+span {
+    @include spanCode;
+}
+
+%a {
+    text-decoration: none;
+    color: #fff;
+    padding: 25px 12px 10px 12px;
+    &:hover {
+        color: #d9534f;
+        background: #fff;
+    }
+}
+
+.learn {
+    background: #d9534f;
+    border-radius: 10px;
+    @extend %a;
+}
+
+
+
