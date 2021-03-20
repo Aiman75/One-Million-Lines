@@ -2,21 +2,22 @@ html {
   padding: 0;
   margin: 0;
   font-size: 1rem;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: grey;
   color: #FFF;
   padding: 0;
   margin: 0;
 }
 
-header {
+.two, .one, header {
   text-align: center;
 }
 
-.nav-btn p, .nav {
+.nav-btn a, .nav {
   color: #939090;
+  text-decoration: none;
 }
 
 .nav {
@@ -32,8 +33,12 @@ header {
   justify-content: space-between;
 }
 
-.nav-btn p {
+.nav-btn a {
   margin-right: 70px;
+}
+.nav-btn a:hover {
+  color: #FFF;
+  transition: 0.2s ease-in-out;
 }
 
 .logo {
@@ -71,11 +76,95 @@ span {
 .learn:hover {
   color: #d9534f;
   background: #fff;
+  transition: 0.2s ease-in-out;
 }
 
 .learn {
   background: #d9534f;
   border-radius: 10px;
+}
+
+.code {
+  margin-top: 40px;
+}
+
+.one {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.one p {
+  color: #000;
+  font-size: 1.5rem;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.one span {
+  color: #f74c3c;
+  font-size: 1.5rem;
+}
+
+h2 {
+  color: #f74c3c;
+  font-size: 1.8rem;
+}
+
+hr {
+  width: 125px;
+  color: #f74c3c;
+}
+
+.two {
+  background: #f5f5f5;
+  color: #000;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.involved {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.involved .involved_p {
+  margin-bottom: 20px;
+}
+.involved .involved_p p {
+  color: #000;
+  font-size: 1.5rem;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.involved_liens {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.lien .button {
+  background: #FFF;
+  color: #f74c3c;
+  padding: 10px;
+  border: 1px solid #939090;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.lien .button:hover {
+  background: #f74c3c;
+  color: #FFF;
+  transition: 0.2s ease-in-out;
+}
+
+footer {
+  background: #f74c3c;
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo_bas {
+  padding: 150px 80px 30px 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
